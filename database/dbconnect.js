@@ -1,5 +1,5 @@
 const config = require('./dbconfig')
-
+const mongoose = require('mongoose')
 
 mongoose.connect(config.link, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
